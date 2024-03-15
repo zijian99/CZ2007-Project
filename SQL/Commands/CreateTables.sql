@@ -1,0 +1,135 @@
+
+CREATE TABLE USERS(
+	UID INT,
+	UName varchar(255),
+	PRIMARY KEY (UID),
+);
+CREATE TABLE PRODUCTS (
+	PName varchar(255),
+	Maker varchar(255),
+	Category varchar(255),
+
+	PRIMARY KEY (PName)
+);
+CREATE TABLE SHOPS(
+	SName varchar(255),
+	
+	PRIMARY KEY (SName),
+);
+CREATE TABLE ORDERS(
+	OID INT,
+	UID INT,
+	ODate_time datetime,
+	Shipping_address varchar(255),
+	
+	PRIMARY KEY (OID),
+	
+	FOREIGN KEY (UID) REFERENCES USERS(UID)
+);
+CREATE TABLE EMPLOYEE(
+	EmployeeID INT IDENTITY(1,1),
+	EName varchar(255),
+	Salary double PRECISION,
+	
+	PRIMARY KEY (EmployeeID),
+);
+CREATE TABLE COMPLAINTS(
+	CID INT,
+	UID INT,
+	CText varchar(255),
+	CStatus INT,
+	Filed_datetime datetime,
+	Handled_datetime datetime,
+	EmployeeID INT,
+
+	PRIMARY KEY (CID),
+	FOREIGN KEY (EmployeeID) REFERENCES EMPLOYEE(EmployeeID),
+	FOREIGN KEY (UID) REFERENCES Users(UID)
+);
+
+
+
+CREATE TABLE PRICE_HISTORY (
+	PName varchar(255),
+	SName varchar(255),
+	StartDate DATE,
+	EndDate DATE,
+	Price DOUBLE PRECISION,
+
+	PRIMARY KEY (PName, SName, StartDate, EndDate),
+	-- PNam and SName is foreign key 
+	FOREIGN KEY (PName) REFERENCES PRODUCTS(PName),
+	FOREIGN KEY (SName) REFERENCES SHOPS(SName)
+);
+CREATE TABLE PRODUCTS_IN_ORDERS(
+	PName varchar(255),
+	SName varchar(255),
+	OID INT,
+	OPID INT,
+	OPrice DOUBLE PRECISION,
+	OQuantity INT,
+	Delivery_date DATE,
+	OStatus INT,--shipped,deliverd,returned
+
+	PRIMARY KEY (PName, SName, OID),
+	-- PNam and SName is foreign key 
+	FOREIGN KEY (PName) REFERENCES PRODUCTS(PName),
+	FOREIGN KEY (SName) REFERENCES SHOPS(SName),
+	FOREIGN KEY (OID) REFERENCES ORDERS(OID)
+);
+CREATE TABLE PRODUCTS_IN_SHOPS(
+	PName varchar(255),
+	SName varchar(255),
+	SPID INT,
+	SPrice DOUBLE PRECISION,
+	SQuantity INT,
+	
+	PRIMARY KEY (PName, SName),
+	-- PNam and SName is foreign key 
+	FOREIGN KEY (PName) REFERENCES PRODUCTS(PName),
+	FOREIGN KEY (SName) REFERENCES SHOPS(SName)
+);
+CREATE TABLE COMPLAINTS_ON_SHOPS(
+	CID INT,
+	SName varchar(255),
+	
+	PRIMARY KEY (CID),
+	
+	FOREIGN KEY (CID) REFERENCES COMPLAINTS(CID),
+	FOREIGN KEY (SName) REFERENCES SHOPS(SName)
+);
+CREATE TABLE COMPLAINTS_ON_ORDERS(
+	CID INT,
+	OID INT,
+	
+	PRIMARY KEY (CID),
+	
+	FOREIGN KEY (CID) REFERENCES COMPLAINTS(CID),
+	FOREIGN KEY (OID) REFERENCES ORDERS(OID)
+);
+CREATE TABLE FEEDBACK(
+	UID INT,
+	PName varchar(255),
+	SName varchar(255),
+	OID INT,
+	FDate_time datetime,
+	Rating INT,
+	Comment varchar(255),
+	
+	PRIMARY KEY (PName,SName,OID),
+	
+	FOREIGN KEY (UID) REFERENCES USERS(UID),
+	FOREIGN KEY (PName) REFERENCES PRODUCTS(PName),
+	FOREIGN KEY (SName) REFERENCES SHOPS(SName),
+	FOREIGN KEY (OID) REFERENCES ORDERS(OID)
+);
+CREATE TABLE HANDLED(
+	CID INT,
+	handled_datetime datetime,
+	EmployeeID INT,
+
+	PRIMARY KEY (CID),
+	
+	FOREIGN KEY (CID) REFERENCES COMPLAINTS(CID),
+	FOREIGN KEY (EmployeeID) REFERENCES EMPLOYEE(EmployeeID)
+);

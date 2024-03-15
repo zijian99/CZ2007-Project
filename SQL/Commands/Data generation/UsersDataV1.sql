@@ -1,0 +1,240 @@
+INSERT INTO USERS (UName)
+VALUES
+  ('Cassidy'),
+  ('Camden'),
+  ('Timothy'),
+  ('Slade'),
+  ('Amelia'),
+  ('Jennifer'),
+  ('Wyoming'),
+  ('Orli'),
+  ('Autumn'),
+  ('Whoopi');
+INSERT INTO USERS (UName)
+VALUES
+  ('Noah'),
+  ('Amy'),
+  ('Peter'),
+  ('Willow'),
+  ('Holmes'),
+  ('Keely'),
+  ('Wang'),
+  ('Kelly'),
+  ('Russell'),
+  ('Walker');
+INSERT INTO USERS (UName)
+VALUES
+  ('Holmes'),
+  ('Edan'),
+  ('Oren'),
+  ('Priscilla'),
+  ('Christine'),
+  ('Ignatius'),
+  ('Vaughan'),
+  ('Tana'),
+  ('Camden'),
+  ('Orli');
+INSERT INTO USERS (UName)
+VALUES
+  ('Daquan'),
+  ('Tanek'),
+  ('Tanner'),
+  ('Odessa'),
+  ('Griffin'),
+  ('Thor'),
+  ('Kermit'),
+  ('Madeson'),
+  ('Claudia'),
+  ('Rhona');
+INSERT INTO USERS (UName)
+VALUES
+  ('Thaddeus'),
+  ('Kylie'),
+  ('Melinda'),
+  ('Shafira'),
+  ('Nicole'),
+  ('Hu'),
+  ('Nina'),
+  ('Solomon'),
+  ('Renee'),
+  ('Janna');
+INSERT INTO USERS (UName)
+VALUES
+  ('Cheyenne'),
+  ('Brian'),
+  ('Medge'),
+  ('Brendan'),
+  ('Helen'),
+  ('Igor'),
+  ('Emmanuel'),
+  ('Colt'),
+  ('Oliver'),
+  ('Cassandra');
+INSERT INTO USERS (UName)
+VALUES
+  ('Chelsea'),
+  ('Upton'),
+  ('Amir'),
+  ('Ella'),
+  ('Jerome'),
+  ('Shannon'),
+  ('Harrison'),
+  ('Alec'),
+  ('Tallulah'),
+  ('Aiko');
+INSERT INTO USERS (UName)
+VALUES
+  ('Walker'),
+  ('Wynne'),
+  ('Nolan'),
+  ('Conan'),
+  ('Kermit'),
+  ('Sydney'),
+  ('Randall'),
+  ('Chloe'),
+  ('Abraham'),
+  ('Camilla');
+INSERT INTO USERS (UName)
+VALUES
+  ('Cole'),
+  ('Blossom'),
+  ('Priscilla'),
+  ('Colin'),
+  ('Deacon'),
+  ('Melinda'),
+  ('Zeus'),
+  ('Kaitlin'),
+  ('Caldwell'),
+  ('Kirk');
+INSERT INTO USERS (UName)
+VALUES
+  ('Seth'),
+  ('Germane'),
+  ('MacKenzie'),
+  ('Larissa'),
+  ('Jerry'),
+  ('Shelby'),
+  ('Jakeem'),
+  ('Xena'),
+  ('Reece'),
+  ('Curran');
+INSERT INTO USERS (UName)
+VALUES
+  ('Raven'),
+  ('Abbot'),
+  ('Jada'),
+  ('Holly'),
+  ('Alvin'),
+  ('Mara'),
+  ('Kimberley'),
+  ('Rana'),
+  ('Rhiannon'),
+  ('Caldwell');
+INSERT INTO USERS (UName)
+VALUES
+  ('Colette'),
+  ('Anne'),
+  ('Cade'),
+  ('Philip'),
+  ('Abra'),
+  ('Ashely'),
+  ('Fitzgerald'),
+  ('Britanney'),
+  ('Bryar'),
+  ('Simon');
+INSERT INTO USERS (UName)
+VALUES
+  ('Montana'),
+  ('Bruno'),
+  ('Justina'),
+  ('Maia'),
+  ('Jordan'),
+  ('Tarik'),
+  ('Oprah'),
+  ('Duncan'),
+  ('Hasad'),
+  ('Rigel');
+INSERT INTO USERS (UName)
+VALUES
+  ('Andrew'),
+  ('Donna'),
+  ('Jamal'),
+  ('Kitra'),
+  ('Vanna'),
+  ('Shad'),
+  ('Lani'),
+  ('Vincent'),
+  ('Jenna'),
+  ('Brianna');
+INSERT INTO USERS (UName)
+VALUES
+  ('Jada'),
+  ('Andrew'),
+  ('Ivan'),
+  ('Kato'),
+  ('Brooke'),
+  ('Shannon'),
+  ('Kylie'),
+  ('Jael'),
+  ('Karleigh'),
+  ('Quyn');
+INSERT INTO USERS (UName)
+VALUES
+  ('Lamar'),
+  ('Ora'),
+  ('Mary'),
+  ('Patricia'),
+  ('Ella'),
+  ('Chava'),
+  ('Colin'),
+  ('Gil'),
+  ('Carly'),
+  ('Julian');
+INSERT INTO USERS (UName)
+VALUES
+  ('Kaseem'),
+  ('Emmanuel'),
+  ('Reagan'),
+  ('Wing'),
+  ('Jameson'),
+  ('Malcolm'),
+  ('Hyatt'),
+  ('Tad'),
+  ('Desiree'),
+  ('Nayda');
+INSERT INTO USERS (UName)
+VALUES
+  ('Phoebe'),
+  ('Richard'),
+  ('Kimberley'),
+  ('Noel'),
+  ('Todd'),
+  ('Orla'),
+  ('Lucius'),
+  ('Garrett'),
+  ('Amir'),
+  ('Yuri');
+INSERT INTO USERS (UName)
+VALUES
+  ('Blaze'),
+  ('Hyacinth'),
+  ('Talon'),
+  ('Velma'),
+  ('Vladimir'),
+  ('Russell'),
+  ('Morgan'),
+  ('Hedwig'),
+  ('Kermit'),
+  ('Travis');
+INSERT INTO USERS (UName)
+VALUES
+  ('Micah'),
+  ('Isaac'),
+  ('Malachi'),
+  ('Idona'),
+  ('Malik'),
+  ('Portia'),
+  ('Idona'),
+  ('Zena'),
+  ('Beatrice'),
+  ('Aladdin');
